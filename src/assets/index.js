@@ -21,11 +21,13 @@ import threejs from "./tech/threejs.webp";
 
 import bjss from "./company/bjss.webp";
 import materiom from "./company/materiom.webp";
+import lnw from "./company/lnw.webp";
 import safex from "./company/safex.webp";
 import e42 from "./company/e42.webp";
 
 import safexOrg from "./safexorg.webp";
 import materiomOrg from "./materiomorg.webp";
+import monopoly from "./monopoly.webp";
 import safexPic from "./safexpic.webp";
 
 export {
@@ -50,9 +52,11 @@ export {
   threejs,
   bjss,
   materiom,
+  lnw,
   safex,
   e42,
   safexOrg,
   materiomOrg,
+  monopoly,
   safexPic,
 };
