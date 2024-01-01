@@ -1,5 +1,4 @@
 import {
-  safex,
   skater,
   creator,
   record,
@@ -14,11 +13,14 @@ import {
   mongodb,
   git,
   docker,
+  safex,
   bjss,
   e42,
   materiom,
+  lnw,
   safexOrg,
   materiomOrg,
+  monopoly,
   safexPic,
   threejs,
 } from "../assets";
@@ -106,41 +108,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Safex",
-    icon: safex,
+    title: "Senior Developer",
+    company_name: "Light & Wonder",
+    icon: lnw,
     iconBg: "#ffffff",
-    date: "March 2020 - January 2021",
+    date: "August 2023 - November 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Lead Fullstack Developer",
-    company_name: "Element 42",
-    icon: e42,
-    iconBg: "#ffffff",
-    date: "January 2021 - January 2022",
-    points: [
-      "Responsible for overseeing a team of developers.",
-      "Finding new projects and initiating the design process.",
-      "Working with clients and developers to achieve a shared vision.",
-      "Delivering highly functional and scalable products with ongoing support.",
-    ],
-  },
-  {
-    title: "Lead Fullstack Developer",
-    company_name: "Materiom",
-    icon: materiom,
-    iconBg: "#ffffff",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Tasked with research and selection of new technologies for use in greenfield project.",
-      "Collaborating with cross-functional teams including designers, database experts and material researchers.",
-      "Implementing responsive design and ensuring cross-browser compatibility for new MVP product.",
+      "Responsible for game development and project management at industry leading gaming company.",
+      "Mentoring and code review for junior developers.",
+      "Managing ongoing live issues for games already released to the public.",
     ],
   },
   {
@@ -154,29 +130,51 @@ const experiences = [
       "Participated in collaborative projects to help improve internal processes",
     ],
   },
+  {
+    title: "Principal Developer",
+    company_name: "Materiom",
+    icon: materiom,
+    iconBg: "#ffffff",
+    date: "January 2022 - July 2022",
+    points: [
+      "Tasked with research and selection of new technologies for use in greenfield project.",
+      "Collaborating with cross-functional teams including designers, database experts and material scientists.",
+      "Implementing responsive design and ensuring cross-browser compatibility for new MVP product.",
+    ],
+  },
+  {
+    title: "Lead Fullstack Developer",
+    company_name: "Element 42",
+    icon: e42,
+    iconBg: "#ffffff",
+    date: "January 2021 - December 2023",
+    points: [
+      "Responsible for overseeing a team of developers.",
+      "Finding new projects and initiating the design process.",
+      "Working with clients and developers to achieve a shared vision.",
+      "Delivering highly functional and scalable products with ongoing support.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Safex",
+    icon: safex,
+    iconBg: "#ffffff",
+    date: "December 2019 - January 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
 ];
 
 const projects = [
   {
-    name: "Safex",
-    description: "The landing page for the Safex blockchain project.",
-    tags: [
-      {
-        name: "html5",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css3",
-        color: "green-text-gradient",
-      },
-    ],
-    image: safexOrg,
-    source_code_link: "https://safex.org/",
-  },
-  {
     name: "Materials Library",
     description:
-      "Web application allowing users to submit, view and edit sustainable biomaterial recipes.",
+      "Web application allowing users to submit, view and edit biomaterial research data.",
     tags: [
       {
         name: "react",
@@ -195,7 +193,44 @@ const projects = [
     source_code_link: "https://materiom.org/search",
   },
   {
-    name: "Safex World Marketplace",
+    name: "Monopoly TWT",
+    description:
+      "Online slot game built using in house JS framework.",
+    tags: [
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "jira",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "pixijs",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: monopoly,
+    source_code_link: "https://igaming.lnw.com/games/monopoly-travel-world-tour/",
+  },
+  {
+    name: "Safex",
+    description: "The landing page for the Safex blockchain project.",
+    tags: [
+      {
+        name: "html5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css3",
+        color: "green-text-gradient",
+      },
+    ],
+    image: safexOrg,
+    source_code_link: "https://safex.org/",
+  },
+  {
+    name: "Safex Marketplace",
     description:
       "A desktop app allowing users access a decentralised e-commerce marketplace based on blockchain technology.",
     tags: [
