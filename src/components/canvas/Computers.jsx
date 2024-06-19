@@ -9,7 +9,7 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={0.15} groundColor="violet" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -21,9 +21,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.4 : 0.45}
-        position={isMobile ? [0, -3, -5] : [0, -4.25, -1.5]}
-        rotation={[-0.0, -0, -0]}
+        scale={isMobile ? 0.7 : 0.45}
+        position={isMobile ? [0, -3, -0] : [0, -4.25, -1.5]}
+        rotation={isMobile ? [-0.0, 2.1 , -0] : [-0.0, -0, -0]}
       />
     </mesh>
   );
@@ -54,12 +54,11 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <>
-      {isMobile ? <></> : <Canvas
+    <><Canvas
         frameloop="demand"
         shadows
         dpr={[1, 2]}
-        camera={{ position: [20, 3, 5], fov: 38 }}
+        camera={{ position: [20, 3, 5], fov: isMobile ? 95 : 38 }}
         gl={{ preserveDrawingBuffer: true }}
       >
         {
@@ -71,13 +70,13 @@ const ComputersCanvas = () => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
           />
-          <Computers isMobile={isMobile} scale={0.9}/>
+          <Computers isMobile={isMobile} scale={isMobile ? 5 : 0.9}/>
         </Suspense>
         <Preload all />
         {
         //</Resize>
       }
-      </Canvas>}
+      </Canvas>
     </>
   );
 };

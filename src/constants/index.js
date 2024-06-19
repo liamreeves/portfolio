@@ -14,6 +14,7 @@ import {
   git,
   docker,
   safex,
+  and,
   bjss,
   e42,
   materiom,
@@ -61,14 +62,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -89,6 +82,15 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  
+  {
     name: "MongoDB",
     icon: mongodb,
   },
@@ -108,11 +110,23 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Product Developer",
+    company_name: "AND Digital",
+    icon: and,
+    iconBg: "#ffffff",
+    date: "January 2024 - March 2024",
+    points: [
+      "Working with various clients and technologies for a top UK tech consultancy.",
+      "Responsible for helping clients achieve their visions through Agile methods.",
+      "Visiting clients on site to facilitate better integration between teams.",
+    ],
+  },
+  {
     title: "Senior Developer",
     company_name: "Light & Wonder",
     icon: lnw,
     iconBg: "#ffffff",
-    date: "August 2023 - November 2023",
+    date: "August 2023 - December 2023",
     points: [
       "Responsible for game development and project management at industry leading gaming company.",
       "Mentoring and code review for junior developers.",
@@ -126,8 +140,9 @@ const experiences = [
     iconBg: "#ffffff",
     date: "July 2022 - December 2023",
     points: [
-      "Certified AWS Cloud Practitioner",
-      "Participated in collaborative projects to help improve internal processes",
+      "Working with different UK companies on behalf of a top UK tech consultancy.",
+      "Certified AWS Cloud Practitioner.",
+      "Participated in collaborative projects to help improve internal processes.",
     ],
   },
   {
@@ -139,7 +154,7 @@ const experiences = [
     points: [
       "Tasked with research and selection of new technologies for use in greenfield project.",
       "Collaborating with cross-functional teams including designers, database experts and material scientists.",
-      "Implementing responsive design and ensuring cross-browser compatibility for new MVP product.",
+      "Implementing responsive design and ensuring cross browser and device compatibility for new MVP product.",
     ],
   },
   {

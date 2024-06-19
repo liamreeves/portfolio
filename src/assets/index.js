@@ -20,6 +20,7 @@ import typescript from "./tech/typescript.webp";
 import threejs from "./tech/threejs.webp";
 
 import bjss from "./company/bjss.webp";
+import and from "./company/and.webp";
 import materiom from "./company/materiom.webp";
 import lnw from "./company/lnw.webp";
 import safex from "./company/safex.webp";
@@ -50,6 +51,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  and,
   bjss,
   materiom,
   lnw,
